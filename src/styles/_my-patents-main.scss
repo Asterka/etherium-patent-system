@@ -1,5 +1,5 @@
 @import 'search-input';
-
+@import 'patent-table';
 .my-patents-main{
     width: calc( 8 * #{$col-and-gutter} - #{$column-gutter});
     height: 100%;
