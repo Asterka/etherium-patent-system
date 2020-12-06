@@ -1,0 +1,14 @@
+@import "utilities/variables";
+
+
+.input-component{
+    margin-bottom: 24px;
+    h4{
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    input{
+        width: $main;
+        height: 40px;
+    }
+}

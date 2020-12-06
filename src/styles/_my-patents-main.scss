@@ -1,0 +1,7 @@
+@import 'search-input';
+
+.my-patents-main{
+    width: calc( 8 * #{$col-and-gutter} - #{$column-gutter});
+    height: 100%;
+    margin-left: calc( 3 * #{$col-and-gutter});
+}

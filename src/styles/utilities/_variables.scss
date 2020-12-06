@@ -1,0 +1,6 @@
+$column-gutter: 24px;
+$column-width: 138px;
+$column-number: 12;
+$col-and-gutter: calc(#{$column-width} + #{$column-gutter});
+$main: calc(5 * #{$col-and-gutter} - #{$column-gutter})
+

@@ -1,0 +1,9 @@
+.breadcrumbs{
+    padding-top: 60px;
+    position: relative;
+    left: calc( 3 * #{$col-and-gutter});
+    a{
+        color: #BDBDBD;
+        font-size: 14px;
+    }
+}

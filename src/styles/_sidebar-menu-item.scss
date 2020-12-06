@@ -1,0 +1,28 @@
+.sidebar-menu{
+    margin-top: 90px;
+    .sidebar-menu-item{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        height: 52px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        width: 251px;
+        margin: 0;
+        padding-left: 80px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        *{
+            margin: 0px;
+            color: white;
+        }
+        h4{
+            color: white;
+            margin-left: 8px;
+            font-size: 20px;
+        }
+    }
+    .sidebar-menu-item:hover{
+        background-color: #54555E;
+    }
+}

@@ -1,0 +1,41 @@
+@import "utilities/variables";
+
+
+.two-lined-input{
+    display: flex;
+    flex-direction: row;
+    width: $main;
+    margin-bottom: 24px;
+     .input-component-big{
+        h4{
+            margin-right: calc( #{$column-gutter} / 2);
+            font-size: 14px;
+            margin-bottom: 4px;
+            width: calc( 0.6 * #{$main} - #{$column-gutter}/2);
+        }
+        input{
+            margin-right: calc( #{$column-gutter} / 2);
+            width: $main;
+            height: 40px;
+            padding: 0px;
+            width: calc( 0.6 * #{$main} - #{$column-gutter}/2);
+        }
+    }
+    .input-component-small{
+        h4{
+            margin-left: calc( #{$column-gutter} / 2);
+            font-size: 14px;
+            margin-bottom: 4px;
+            width: calc( 0.4 * #{$main} - #{$column-gutter}/2);
+        }
+        input{
+            margin-left: calc( #{$column-gutter} / 2);
+            width: $main;
+            height: 40px;
+            padding: 0px;
+            margin-left: calc( #{$column-gutter} / 2);
+            width: calc( 0.4 * #{$main} - #{$column-gutter}/2);
+        }
+    }
+    
+}

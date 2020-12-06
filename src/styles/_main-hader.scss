@@ -1,0 +1,11 @@
+.main-header{
+    padding-top: 44px;
+    margin-bottom: 60px;
+    position: relative;
+    left: calc( 3 * #{$col-and-gutter});
+    h1{
+        color: black;
+        font-size: 40px;
+        font-weight: 900;
+    }
+}

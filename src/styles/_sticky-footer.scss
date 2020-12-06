@@ -1,0 +1,29 @@
+.sticky-footer{
+    position: sticky;
+    margin-left: calc((2 * #{$col-and-gutter} - #{$column-gutter}));
+    bottom: 0;
+    width: calc(10 * (#{$col-and-gutter}));
+    .opacity-div{
+        height: 60px;
+        position: relative;
+        top: 40px;
+        width: 100%;
+        background-color: #FFFFFF;
+        z-index: 0;
+
+    }
+    button{
+        position: relative;
+        bottom: 20px;
+        margin-left: calc((#{$col-and-gutter} + #{$column-gutter}));
+        border: 0px;
+        color: #FFFFFF;
+        background-color: #000000;
+        border-radius: 8px;
+        height: 40px;
+        font-size: 16px;
+        padding: 11px 16px;
+        z-index: 1;
+        
+    }
+}

@@ -1,0 +1,10 @@
+@import 'sidebar-menu-item';
+
+.sidebar{
+    width: calc(#{$column-width} * 2 + #{$column-gutter});
+    background-color: #383942;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

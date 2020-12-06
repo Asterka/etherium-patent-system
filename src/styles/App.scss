@@ -1,4 +1,81 @@
+@import "utilities/variables";
+@import "input_styles";
+@import "two-lined-input";
+@import "creation_page";
+@import "sidebar";
+@import "main-hader";
+@import "breadcrumbs";
+@import "sticky-footer";
+@import "person-card";
+@import "my-patents-main";
+
+@import "./node_modules/bulma/bulma.sass";
+
 *{
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
     margin: 0 auto;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    position: relative;
+    height: 1382px;
+}
+.main{
+    margin-left: calc(3 * (#{$column-width} + #{$column-gutter}));
+    width: $main;
+    height: 100%;
+}
+
+// Cross-browsers opacity: @include opacity(0.5);
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// Transitions for all: @include transition($transition);
+$transition: all .3s ease;
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
+
+// Input placeholder animation: @include placeholder { color: #000 }
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+// How to use:
+input {
+    padding: 0 16px; 
+    text-overflow: ellipsis;
+    @include placeholder {
+        color: #DADADA;
+        transition: $transition;
+        @include opacity(1);
+    }
+    &:focus {
+        @include placeholder {
+            @include opacity(0);
+            transition: $transition;
+        }
+    }
 }
