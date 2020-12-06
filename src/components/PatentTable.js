@@ -1,6 +1,46 @@
 import React from 'react'
 
-export default function PatentTable() {
+export default function PatentTable({data, type}) {
+    let data_rows = [];
+    if(type === "my"){
+        data_rows = data.map((element)=>{
+            return(
+                <tr>
+                            <td className="name-column">
+                                    <h4>{element.name}</h4>
+                                    <h4 className="uuid">{element.uuid}</h4>
+                                </td>
+                                <td className="date-column">
+                                    <h4>{element.date}</h4>
+                                </td>
+                                <td className="membership">
+                                    <h4>{element.membership}</h4>
+                                </td>
+                </tr>
+                )
+        })
+    }
+    else{
+        data_rows = data.map((element)=>{
+            return(
+                <tr>
+                            <td className="name-column">
+                                    <h4>{element.name}</h4>
+                                    <h4 className="uuid">{element.uuid}</h4>
+                                </td>
+                                
+                                <td className="inventor">
+                                    <h4>{element.inventor}</h4>
+                                </td>
+
+                                <td className="date-column">
+                                    <h4>{element.date}</h4>
+                                </td>
+                </tr>
+                )
+        })
+    }
+
     return (
         <div className="patent-table">
             <table className="table is-fullwidth">
@@ -18,30 +58,7 @@ export default function PatentTable() {
                     </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td className="name-column">
-                            <h4>Artificial intelligence disease type analysis method, smart server and storage</h4>
-                            <h4 className="uuid">UID: 144 18332341</h4>
-                        </td>
-                        <td className="date-column">
-                            <h4>12/12/2020</h4>
-                        </td>
-                        <td className="membership">
-                            <h4>inventor</h4>
-                        </td>
-                </tr>
-                <tr>
-                    <td className="name-column">
-                            <h4>Artificial intelligence disease type analysis method, smart server and storage</h4>
-                            <h4 className="uuid">UID: 144 18332341</h4>
-                        </td>
-                        <td className="date-column">
-                            <h4>12/12/2020</h4>
-                        </td>
-                        <td className="membership">
-                            <h4>inventor</h4>
-                        </td>
-                </tr>
+                    {data_rows}
                 </tbody>
             </table>
         </div>

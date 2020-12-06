@@ -1,11 +1,11 @@
 import React from 'react'
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
-
-export default function SidebarMenuItem({name}) {
+import {Link} from "react-router-dom";
+export default function SidebarMenuItem({name, destination}) {
     return (
         <div className="sidebar-menu-item">
             <EmojiObjectsIcon/>
-            <h4>{name}</h4>
+            <Link to={`/${destination}`}>{name}</Link>
         </div>
     )
 }
