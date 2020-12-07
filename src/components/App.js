@@ -17,6 +17,7 @@ import {
 
 export default function App() {
     const [locationName, setLocationName] = useState("My patents");
+    const [queue, setQueue] = useState("");
     return (
         <>
         <Router>
@@ -28,10 +29,10 @@ export default function App() {
                 <CreationPage />
             </Route>
             <Route path="/my_patents">
-                <MyPatentsPage/>
+                <MyPatentsPage queue={queue} setQueue={setQueue}/>
             </Route>
             <Route path="/top_patents">
-                <TopPatentsPage/>
+                <TopPatentsPage queue={queue} setQueue={setQueue}/>
             </Route>
             </Switch>
         <StickyFooter/>

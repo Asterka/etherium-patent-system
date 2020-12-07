@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PatentTable({data, type}) {
+export default function PatentTable({data, type, queue}) {
     let data_rows = [];
     if(type === "my"){
         data_rows = data.map((element)=>{
@@ -29,13 +29,15 @@ export default function PatentTable({data, type}) {
                                     <h4 className="uuid">{element.uuid}</h4>
                                 </td>
                                 
-                                <td className="inventor">
+                                <td className="inventor_name">
                                     <h4>{element.inventor}</h4>
                                 </td>
 
                                 <td className="date-column">
                                     <h4>{element.date}</h4>
                                 </td>
+
+                               
                 </tr>
                 )
         })
@@ -46,14 +48,14 @@ export default function PatentTable({data, type}) {
             <table className="table is-fullwidth">
                 <thead>
                     <tr>
-                        <td className="name-column">
+                        <td className="name">
                             <h4>name</h4>
                         </td>
                         <td className="date-column">
-                            <h4>creation date</h4>
+                            <h4>{type==="my"?"creation date":"inventor"}</h4>
                         </td>
                         <td className="membership">
-                            <h4>your membership</h4>
+                            <h4>{type==="my"?"your membership":"creation date"}</h4>
                         </td>
                     </tr>
                 </thead>

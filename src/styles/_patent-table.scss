@@ -24,6 +24,9 @@
         .membership{
             width: calc( 2 * #{$col-and-gutter});
         }
+        .inventor_name{
+            width: calc( 2 * #{$col-and-gutter});
+        }
         thead tr td{
             padding: 0 0 0 0 ;
         }
