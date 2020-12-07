@@ -22,7 +22,7 @@ export default function App() {
     return (
         <>
         <Router>
-        <Sidebar locationName={locationName} setLocationName={setLocationName} setBreadCrumbsMain={setBreadCrumbsMain}/>
+        <Sidebar locationName={locationName} setLocationName={setLocationName} setBreadCrumbsMain={setBreadCrumbsMain} setQueue={setQueue}/>
         <BreadCrumbs previousPage={breadCrumbsMain} nextPage={"creation"}/>
         <HeaderMain name={locationName}/>
             <Switch>

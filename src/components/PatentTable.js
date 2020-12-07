@@ -2,7 +2,13 @@ import React from 'react'
 
 export default function PatentTable({data, type, queue}) {
     let data_rows = [];
+    
     if(type === "my"){
+        data = data.filter((element)=>{
+            if(element.name.indexOf(queue) != -1){
+                return element;
+            }
+        });
         data_rows = data.map((element)=>{
             return(
                 <tr>
@@ -21,6 +27,11 @@ export default function PatentTable({data, type, queue}) {
         })
     }
     else{
+        data = data.filter((element)=>{
+            if(element.name.indexOf(queue) != -1){
+                return element;
+            }
+        });
         data_rows = data.map((element)=>{
             return(
                 <tr>
