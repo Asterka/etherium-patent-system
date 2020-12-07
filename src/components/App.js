@@ -17,12 +17,13 @@ import {
 
 export default function App() {
     const [locationName, setLocationName] = useState("My patents");
+    const [breadCrumbsMain, setBreadCrumbsMain] = useState("my patents");
     const [queue, setQueue] = useState("");
     return (
         <>
         <Router>
-        <Sidebar/>
-        <BreadCrumbs previousPage={"my patents"} nextPage={"creation"}/>
+        <Sidebar locationName={locationName} setLocationName={setLocationName} setBreadCrumbsMain={setBreadCrumbsMain}/>
+        <BreadCrumbs previousPage={breadCrumbsMain} nextPage={"creation"}/>
         <HeaderMain name={locationName}/>
             <Switch>
             <Route path="/creation">
