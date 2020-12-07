@@ -1,7 +1,7 @@
 import React from 'react'
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 import {Link} from "react-router-dom";
-export default function SidebarMenuItem({name, destination, setLocationName, setBreadCrumbsMain, setQueue}) {
+export default function SidebarMenuItem({locationName, name, destination, setLocationName, setBreadCrumbsMain, setQueue}) {
     const setHeader = (destination, setLocationName, setBreadCrumbsMain, setQueue) =>{
         switch(destination){
             case "my_patents":
@@ -18,7 +18,7 @@ export default function SidebarMenuItem({name, destination, setLocationName, set
     }
     return (
         <div className="sidebar-menu-item">
-            <EmojiObjectsIcon/>
+            <EmojiObjectsIcon style={{fill: locationName===(name)?"#FFAD33":"white", filter: locationName===(name)?"drop-shadow(0 0 3px rgba(255,173,51,0.5))":"drop-shadow(0 0 3px rgba(255,173,51,0))"}}/>
             <Link to={`/${destination}`} onClick={()=>{setHeader(destination, setLocationName, setBreadCrumbsMain, setQueue)}}>{name}</Link>
         </div>
     )

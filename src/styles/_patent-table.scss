@@ -1,3 +1,18 @@
+@keyframes pulse {  
+    0% {
+      box-shadow: 0 0;
+    }
+    
+    70% {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    
+    100% {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    } 
+    
+}
+
 .patent-table{
     width: calc(100% - #{$col-and-gutter});
     height: 1000px;
@@ -6,7 +21,9 @@
         width: 100%;
         margin: 0;
         padding: 0;
-
+        border-collapse: separate; 
+        border-spacing: 0 50px;
+        
         #column{
             margin: 0;
         }
@@ -15,7 +32,7 @@
                 width: calc( 4 * #{$col-and-gutter} - #{$column-gutter});
                 h4.uuid{
                     padding-top: 17px;
-                    color: #333333;
+                    color: #BDBDBD;
                 }
         }
         .date-column{
@@ -29,9 +46,20 @@
         }
         thead tr td{
             padding: 0 0 0 0 ;
+            color: #BDBDBD;
+            font-size: 20px;
+        }
+        tbody tr{
+            border-bottom: 0px;
         }
         tbody tr td{
-                padding: 60px 0 0 0 ;
+                padding: 10px;
+                font-size: 24px;
+                border-bottom: 0px;
+        }
+        tbody tr:hover{
+                animation: pulse 0.5s;
+                animation-fill-mode: forwards;
         }
     
     }
