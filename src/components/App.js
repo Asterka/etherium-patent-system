@@ -14,6 +14,7 @@ import {
     Route,
     Link
   } from "react-router-dom";
+import ConnectMetamask from './ConnectMetamask';
 
 const Web3 = require('web3');
   
@@ -66,7 +67,7 @@ export default function App() {
         <>
         <Router>
         <Sidebar myName={myName} locationName={locationName} setLocationName={setLocationName} setBreadCrumbsMain={setBreadCrumbsMain} setQueue={setQueue}/>
-        <BreadCrumbs previousPage={breadCrumbsMain} nextPage={"creation"}/>
+        <BreadCrumbs previousPage={breadCrumbsMain} nextPage={"creation"} loadBlockchainData={loadBlockchainData}/>
         <HeaderMain name={locationName}/>
             <Switch>
             <Route path="/creation">
@@ -80,6 +81,7 @@ export default function App() {
             </Route>
             </Switch>
         </Router>
+        
     </>
     )
 }
