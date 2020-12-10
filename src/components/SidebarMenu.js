@@ -17,6 +17,13 @@ export default function SidebarMenu({locationName, setLocationName, setBreadCrum
                     setLocationName={setLocationName}  
                         setBreadCrumbsMain={setBreadCrumbsMain} 
                             setQueue={setQueue}/>
+            
+            <SidebarMenuItem name={"Creation"} 
+            locationName={locationName}
+                destination="creation" 
+                    setLocationName={setLocationName}  
+                        setBreadCrumbsMain={setBreadCrumbsMain} 
+                            />
         </div>
     )
 }
