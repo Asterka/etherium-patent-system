@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Input({name, placeholder}) {
+export default function Input({id, name, placeholder}) {
     return (
         <>
             <div className="input-component">
                 <h4>{name}</h4>
-                <input placeholder={placeholder}></input>
+                <input id={id} placeholder={placeholder}></input>
             </div>
         </>
     )

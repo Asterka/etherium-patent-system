@@ -5,7 +5,7 @@ export default function PatentTable({data, type, queue}) {
     
     if(type === "my"){
         data = data.filter((element)=>{
-            if(element.name.indexOf(queue) != -1){
+            if(element.title.indexOf(queue) != -1){
                 return element;
             }
         });
@@ -13,14 +13,14 @@ export default function PatentTable({data, type, queue}) {
             return(
                 <tr>
                             <td className="name-column">
-                                    <h4>{element.name}</h4>
+                                    <h4>{element.title}</h4>
                                     <h4 className="uuid">{element.uuid}</h4>
                                 </td>
                                 <td className="date-column">
                                     <h4>{element.date}</h4>
                                 </td>
                                 <td className="membership">
-                                    <h4>{element.membership}</h4>
+                                    <h4>{element.role}</h4>
                                 </td>
                 </tr>
                 )
@@ -28,7 +28,7 @@ export default function PatentTable({data, type, queue}) {
     }
     else{
         data = data.filter((element)=>{
-            if(element.name.indexOf(queue) != -1){
+            if(element.title.indexOf(queue) != -1){
                 return element;
             }
         });
@@ -36,12 +36,12 @@ export default function PatentTable({data, type, queue}) {
             return(
                 <tr>
                             <td className="name-column">
-                                    <h4>{element.name}</h4>
+                                    <h4>{element.title}</h4>
                                     <h4 className="uuid">{element.uuid}</h4>
                                 </td>
                                 
                                 <td className="inventor_name">
-                                    <h4>{element.inventor}</h4>
+                                    <h4>{element.agentName}</h4>
                                 </td>
 
                                 <td className="date-column">

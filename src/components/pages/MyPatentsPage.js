@@ -3,7 +3,8 @@ import SearchComponent from './../SearchComponent';
 import PatentTable from './../PatentTable';
 import {data} from './../../data';
 
-export default function MyPatentsPage({queue, setQueue, setBreadCrumbsMain}) {
+export default function MyPatentsPage({queue, setQueue, setBreadCrumbsMain, data}) {
+    console.log(data);
     return (
         <div className="my-patents-main">
             <SearchComponent setQueue={setQueue}/>
