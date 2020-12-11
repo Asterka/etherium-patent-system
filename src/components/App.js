@@ -11,8 +11,10 @@ import {ABI, ADDRESS} from './config';
 import {
     BrowserRouter as Router,
     Switch,
+    StaticRouter,
     Route,
-    Link
+    Link,
+    Redirect
   } from "react-router-dom";
 import ConnectMetamask from './ConnectMetamask';
 
@@ -65,20 +67,20 @@ export default function App() {
     }, [])
     return (
         <>
-        <Router>
+        <Router basename="etherium-patent-system">
         <Sidebar myName={myName} locationName={locationName} setLocationName={setLocationName} setBreadCrumbsMain={setBreadCrumbsMain} setQueue={setQueue}/>
         <BreadCrumbs previousPage={breadCrumbsMain} nextPage={"creation"} loadBlockchainData={loadBlockchainData}/>
         <HeaderMain name={locationName}/>
             <Switch>
-            <Route path={`${document.location.pathname}/creation`}>
-                <CreationPage web3instance={web3instance} myName={myName}/>
-            </Route>
-            <Route path={`${document.location.pathname}/my_patents`}>
-                <MyPatentsPage queue={queue} setQueue={setQueue} data={myPatents}/>
-            </Route>
-            <Route path={`${document.location.pathname}/top_patents`}>
-                <TopPatentsPage queue={queue} setQueue={setQueue} data={topPatents}/>
-            </Route>
+                <Route path={`/creation`}>
+                    <CreationPage web3instance={web3instance} myName={myName}/>
+                </Route>
+                <Route path={`/my_patents`}>
+                    <MyPatentsPage queue={queue} setQueue={setQueue} data={myPatents}/>
+                </Route>
+                <Route path={`/top_patents`}>
+                    <TopPatentsPage queue={queue} setQueue={setQueue} data={topPatents}/>
+                </Route>
             </Switch>
         </Router>
         
