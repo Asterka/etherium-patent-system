@@ -70,13 +70,13 @@ export default function App() {
         <BreadCrumbs previousPage={breadCrumbsMain} nextPage={"creation"} loadBlockchainData={loadBlockchainData}/>
         <HeaderMain name={locationName}/>
             <Switch>
-            <Route path="/creation">
+            <Route path={`${document.location.pathname}/creation`}>
                 <CreationPage web3instance={web3instance} myName={myName}/>
             </Route>
-            <Route path="/my_patents">
+            <Route path={`${document.location.pathname}/my_patents`}>
                 <MyPatentsPage queue={queue} setQueue={setQueue} data={myPatents}/>
             </Route>
-            <Route path="/top_patents">
+            <Route path={`${document.location.pathname}/top_patents`}>
                 <TopPatentsPage queue={queue} setQueue={setQueue} data={topPatents}/>
             </Route>
             </Switch>

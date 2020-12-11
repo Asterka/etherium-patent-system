@@ -16,6 +16,7 @@ export default function SidebarMenuItem({locationName, name, destination, setLoc
             break;
         }
     }
+    console.log(destination);
     return (
         <div className="sidebar-menu-item">
             <EmojiObjectsIcon style={{fill: locationName===(name)?"#FFAD33":"white", filter: locationName===(name)?"drop-shadow(0 0 3px rgba(255,173,51,0.5))":"drop-shadow(0 0 3px rgba(255,173,51,0))"}}/>
