@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ethirium-patent-system/static/css/main.1123836c.chunk.css",
-    "main.js": "/ethirium-patent-system/static/js/main.403b3c66.chunk.js",
-    "main.js.map": "/ethirium-patent-system/static/js/main.403b3c66.chunk.js.map",
-    "runtime-main.js": "/ethirium-patent-system/static/js/runtime-main.65047823.js",
-    "runtime-main.js.map": "/ethirium-patent-system/static/js/runtime-main.65047823.js.map",
-    "static/js/2.2052d707.chunk.js": "/ethirium-patent-system/static/js/2.2052d707.chunk.js",
-    "static/js/2.2052d707.chunk.js.map": "/ethirium-patent-system/static/js/2.2052d707.chunk.js.map",
-    "index.html": "/ethirium-patent-system/index.html",
-    "static/css/main.1123836c.chunk.css.map": "/ethirium-patent-system/static/css/main.1123836c.chunk.css.map",
-    "static/js/2.2052d707.chunk.js.LICENSE.txt": "/ethirium-patent-system/static/js/2.2052d707.chunk.js.LICENSE.txt"
+    "main.css": "/etherium-patent-system/static/css/main.1123836c.chunk.css",
+    "main.js": "/etherium-patent-system/static/js/main.5c0a4d3b.chunk.js",
+    "main.js.map": "/etherium-patent-system/static/js/main.5c0a4d3b.chunk.js.map",
+    "runtime-main.js": "/etherium-patent-system/static/js/runtime-main.a30b35e6.js",
+    "runtime-main.js.map": "/etherium-patent-system/static/js/runtime-main.a30b35e6.js.map",
+    "static/js/2.91f16699.chunk.js": "/etherium-patent-system/static/js/2.91f16699.chunk.js",
+    "static/js/2.91f16699.chunk.js.map": "/etherium-patent-system/static/js/2.91f16699.chunk.js.map",
+    "index.html": "/etherium-patent-system/index.html",
+    "static/css/main.1123836c.chunk.css.map": "/etherium-patent-system/static/css/main.1123836c.chunk.css.map",
+    "static/js/2.91f16699.chunk.js.LICENSE.txt": "/etherium-patent-system/static/js/2.91f16699.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.65047823.js",
-    "static/js/2.2052d707.chunk.js",
+    "static/js/runtime-main.a30b35e6.js",
+    "static/js/2.91f16699.chunk.js",
     "static/css/main.1123836c.chunk.css",
-    "static/js/main.403b3c66.chunk.js"
+    "static/js/main.5c0a4d3b.chunk.js"
   ]
 }
