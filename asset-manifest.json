@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ethirium-patent-system/static/css/main.1123836c.chunk.css",
-    "main.js": "/ethirium-patent-system/static/js/main.d833e1ae.chunk.js",
-    "main.js.map": "/ethirium-patent-system/static/js/main.d833e1ae.chunk.js.map",
+    "main.js": "/ethirium-patent-system/static/js/main.c5421cca.chunk.js",
+    "main.js.map": "/ethirium-patent-system/static/js/main.c5421cca.chunk.js.map",
     "runtime-main.js": "/ethirium-patent-system/static/js/runtime-main.65047823.js",
     "runtime-main.js.map": "/ethirium-patent-system/static/js/runtime-main.65047823.js.map",
     "static/js/2.2052d707.chunk.js": "/ethirium-patent-system/static/js/2.2052d707.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.65047823.js",
     "static/js/2.2052d707.chunk.js",
     "static/css/main.1123836c.chunk.css",
-    "static/js/main.d833e1ae.chunk.js"
+    "static/js/main.c5421cca.chunk.js"
   ]
 }
