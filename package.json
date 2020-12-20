@@ -1,6 +1,6 @@
 {
-  "name": "ethirium-patent-system",
-  "homepage": "http://asterka.github.io/ethirium-patent-system",
+  "name": "etherium-patent-system",
+  "homepage": "http://asterka.github.io/etherium-patent-system",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

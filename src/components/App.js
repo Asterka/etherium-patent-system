@@ -16,7 +16,6 @@ import {
     Link,
     Redirect
   } from "react-router-dom";
-import ConnectMetamask from './ConnectMetamask';
 
 const Web3 = require('web3');
   
